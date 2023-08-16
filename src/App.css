@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 .App {
   text-align: center;
 }
@@ -35,4 +40,50 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+button > img{
+  height: 30px;
+  width: auto;
+}
+nav{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-left{
+  display: flex;
+  align-items: center;
+
+}
+.dataAll{
+  width: 80vh;
+  height: 70vh;
+}
+.Main{
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.data{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
+.name{
+  margin-top: 5% ;
+  grid-column: 1/3;
+  display: flex;
+  justify-content: center;
+  font-size: larger;
+}
+/* body{
+  background: linear-gradient(to right,pink,lightblue);
+} */
+
+
+.img-w{
+  max-width: 64vh;
 }
